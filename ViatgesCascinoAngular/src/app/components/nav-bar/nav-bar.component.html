@@ -1,1 +1,28 @@
-<p>nav-bar works!</p>
+<main class="main">
+    <!--Arregalr el dropdown, que salga desde la caja y no del texto-->
+    <nav>
+      <ul>
+        <li><a routerLink ="/home">Inicio</a></li>
+        <li class="dropdown">
+          <a routerLink ="/destinations" class="dropbtn">Destinaciones</a>
+          <div class="dropdown-content">
+            <a href="">España</a>
+            <a href="">Italia</a>
+            <a href="">Andorra</a>
+            <a href="">Otros</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropbtn">Transportes</a>
+          <div class="dropdown-content">
+            <a href="">Bus</a>
+            <a href="">Avión</a>
+          </div>
+        </li>
+        <li><a href="">Hoteles</a></li>
+        <li><a href="">La agencia</a></li>
+        <!-- Sobre nosotros / La agencia-->
+        <li><a href="pag/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </main>
