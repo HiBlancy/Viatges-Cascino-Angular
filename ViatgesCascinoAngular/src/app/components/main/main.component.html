@@ -32,9 +32,33 @@
       <button class="carousel-control next">&gt;</button>
     </div>
 
+    <div class="container d-flex justify-content-between flex-wrap">
+    <h2 class="promotions-title">PROMOCIONES TEST</h2>
+    @for (destino of destinacionesmain.destinaciones; track destino){
+      <div class="card m-3" style="width: 18rem;">
+        <img src="{{destino.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body d-flex justify-content-center flex-column align-items-center">
+          <h5 class="card-title display-4">{{destino.titulo}}</h5>
+          <p class="card-text">{{destino.dias_noches}}</p>
+          <p class="card-text">{{destino.precio}}</p>
+        </div>
+      </div>
+    }
+
+    </div>
+
+
+
+
+
+
     <div class="welcome-and-promotions">
       <!-- Promociones -->
       <h2 class="promotions-title">PROMOCIONES</h2>
+
+
+
+
       <div class="promotions-carousel">
         <div class="carousel-wrapper">
           <a href="pag/promotionCarnaval.html" class="promotion-itemP">

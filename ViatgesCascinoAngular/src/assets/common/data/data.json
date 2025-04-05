@@ -1,29 +1,29 @@
 {
   "url_pdf": "Estadio La Cartuja, Sevilla, España",
-  "destinaciones_main": [
+  "destinaciones": [
     {
       "titulo": "CARNAVAL EN VENECIA",
       "dias_noches": "4 días, 3 noches",
       "precio": "Precio: 430€",
-      "imagen": "./assets/CarnavalVenecia.jpg"
+      "imagen": "./assets/CarnavalEnVenecia.jpg"
     },
     {
       "titulo": "PORTAVENTURA",
       "dias_noches": "4 días, 3 noches",
       "precio": "Precio: 299€",
-      "imagen": "./assets/CarnavalVenecia.jpg"
+      "imagen": "./assets/Portaventura.png"
     },
     {
       "titulo": "MERCADO NAVIDEÑO EN COSTA BRAVA",
       "dias_noches": "4 días, 3 noches",
       "precio": "Precio: 249€",
-      "imagen": "./assets/CarnavalVenecia.jpg"
+      "imagen": "./assets/MercadoNavideno.jpg"
     },
     {
       "titulo": "PLAYA DE ARO",
       "dias_noches": "6 días, 5 noches",
       "precio": "Precio: 349€",
-      "imagen": "./assets/CarnavalVenecia.jpg"
+      "imagen": "./assets/PlayaDeAro.jpg"
     }
   ]
 }

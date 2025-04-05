@@ -5,5 +5,5 @@ import { DestinationsComponent } from './components/destinations/destinations.co
 export const routes: Routes = [
     {path: 'home', component: MainComponent},
     {path: 'destinations', component: DestinationsComponent},
-
+    { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];

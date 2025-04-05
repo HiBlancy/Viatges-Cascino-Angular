@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Destinacion } from '../../common/destinaciones';
+import { DestinacionesMain } from '../../common/destinaciones';
 import { DestinacionesMainService } from '../../servicio/destinaciones-main.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { DestinacionesMainService } from '../../servicio/destinaciones-main.serv
   styleUrl: './main.component.css'
 })
 export class MainComponent implements OnInit {
-    destinaciones!: Destinacion;
+    destinacionesmain!: DestinacionesMain;
 
     constructor(private destinacionesService: DestinacionesMainService) { }
 
@@ -22,7 +22,7 @@ export class MainComponent implements OnInit {
         {
           next: (data) => {
             console.log(data)
-            this.destinaciones = data;
+            this.destinacionesmain = data;
           },
           error: (error) => {
             console.error('Error loading destinations:', error);
