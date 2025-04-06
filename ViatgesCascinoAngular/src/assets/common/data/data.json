@@ -1,11 +1,13 @@
 {
+  "titulo": "PROMOCIONES",
   "url_pdf": "Estadio La Cartuja, Sevilla, España",
   "destinaciones": [
     {
       "titulo": "CARNAVAL EN VENECIA",
       "dias_noches": "4 días, 3 noches",
       "precio": "Precio: 430€",
-      "imagen": "./assets/CarnavalEnVenecia.jpg"
+      "imagen": "./assets/CarnavalEnVenecia.jpg",
+      "ruta": "./destinos/carnaval-venecia"
     },
     {
       "titulo": "PORTAVENTURA",

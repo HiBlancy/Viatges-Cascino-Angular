@@ -32,33 +32,29 @@
       <button class="carousel-control next">&gt;</button>
     </div>
 
+    
+    <h2 class="promotions-title">{{destinacionesmain.titulo}}</h2>
+
     <div class="container d-flex justify-content-between flex-wrap">
-    <h2 class="promotions-title">PROMOCIONES TEST</h2>
     @for (destino of destinacionesmain.destinaciones; track destino){
-      <div class="card m-3" style="width: 18rem;">
-        <img src="{{destino.imagen}}" class="card-img-top" alt="...">
-        <div class="card-body d-flex justify-content-center flex-column align-items-center">
-          <h5 class="card-title display-4">{{destino.titulo}}</h5>
+      <!--TODO UN ITEM ES UN BOTON, Y REDIRIGE A SU PROPIA PAGINA
+      <!--<a [routerLink]="destino.ruta" class="text-decoration-none">-->
+      <div class="promotion-item card m-3" style="width: 18rem;">
+        <img src="{{destino.imagen}}" class="card-img-top"  alt="...">
+        <div class="card-body d-flex justify-content-center flex-column align-items-center ">
+          <h3 class="card-title text-center display-6"><strong>{{destino.titulo}}</strong></h3>
           <p class="card-text">{{destino.dias_noches}}</p>
-          <p class="card-text">{{destino.precio}}</p>
+          <p class="card-text"><strong>{{destino.precio}}</strong></p>
         </div>
       </div>
+      <!-- </a> -->
     }
-
     </div>
 
 
-
-
-
-
+  
     <div class="welcome-and-promotions">
-      <!-- Promociones -->
-      <h2 class="promotions-title">PROMOCIONES</h2>
-
-
-
-
+    <!--
       <div class="promotions-carousel">
         <div class="carousel-wrapper">
           <a href="pag/promotionCarnaval.html" class="promotion-itemP">
@@ -67,54 +63,9 @@
             <p>4 días, 3 noches</p>
             <p><strong>Precio: 430€</strong></p>
           </a>
-          <a href="" class="promotion-itemP">
-            <img src="./assets/Portaventura.png" alt="Promoción 2" />
-            <h3>PORTAVENTURA</h3>
-            <p>4 días, 3 noches</p>
-            <p><strong>Precio: 299€</strong></p>
-          </a>
-          <a href="" class="promotion-itemP">
-            <img src="./assets/MercadoNavideno.jpg" alt="Promoción 3" />
-            <h3>MERCADO NAVIDEÑO EN COSTA BRAVA</h3>
-            <p>4 días, 3 noches</p>
-            <p><strong>Precio: 249€</strong></p>
-          </a>
-          <a href="" class="promotion-itemP">
-            <img src="./assets/PlayaDeAro.jpg" alt="Promoción 4" />
-            <h3>PLAYA DE ARO</h3>
-            <p>6 días, 5 noches</p>
-            <p><strong>Precio: 349€</strong></p>
-          </a>
-        </div>
-        <button class="carousel-control prevP">&lt;</button>
-        <button class="carousel-control nextP">&gt;</button>
       </div>
-      <div class="promotions">
-        <a href="pag/promotionCarnaval.html" class="promotion-item">
-          <img src="./assets/CarnavalEnVenecia.jpg" alt="Carnaval en Venecia" />
-          <h3>CARNAVAL EN VENECIA</h3>
-          <p>4 días, 3 noches</p>
-          <p><strong>Precio: 430€</strong></p>
-        </a>
-        <a href="" class="promotion-item">
-          <img src="./assets/Portaventura.png" alt="Promoción 2" />
-          <h3>PORTAVENTURA</h3>
-          <p>4 días, 3 noches</p>
-          <p><strong>Precio: 299€</strong></p>
-        </a>
-        <a href="" class="promotion-item">
-          <img src="./assets/MercadoNavideno.jpg" alt="Promoción 3" />
-          <h3>MERCADO NAVIDEÑO EN COSTA BRAVA</h3>
-          <p>4 días, 3 noches</p>
-          <p><strong>Precio: 249€</strong></p>
-        </a>
-        <a href="" class="promotion-item">
-          <img src="./assets/PlayaDeAro.jpg" alt="Promoción 4" />
-          <h3>PLAYA DE ARO</h3>
-          <p>6 días, 5 noches</p>
-          <p><strong>Precio: 349€</strong></p>
-        </a>
-      </div>
+
+    -->
 
       <!-- Bienvenida -->
       <div class="welcome-section">
