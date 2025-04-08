@@ -32,13 +32,13 @@
       <button class="carousel-control next">&gt;</button>
     </div>
 
-    
+
     <h2 class="promotions-title">{{destinacionesmain.titulo}}</h2>
 
     <div class="container d-flex justify-content-between flex-wrap">
     @for (destino of destinacionesmain.destinaciones; track destino){
       <!--TODO UN ITEM ES UN BOTON, Y REDIRIGE A SU PROPIA PAGINA
-      <!--<a [routerLink]="destino.ruta" class="text-decoration-none">-->
+      <!--<a [routerLink]=[] class="text-decoration-none">-->
       <div class="promotion-item card m-3" style="width: 18rem;">
         <img src="{{destino.imagen}}" class="card-img-top"  alt="...">
         <div class="card-body d-flex justify-content-center flex-column align-items-center ">
@@ -52,7 +52,7 @@
     </div>
 
 
-  
+
     <div class="welcome-and-promotions">
     <!--
       <div class="promotions-carousel">

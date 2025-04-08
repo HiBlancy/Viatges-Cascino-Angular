@@ -13,4 +13,16 @@ export class DestinacionesMainService {
   getDestinaciones(): Observable<DestinacionesMain> {
     return this.http.get<DestinacionesMain>('assets/common/data/data.json');
   }
+
+  // getDestinacionesById(id: number): Observable<Destinacion> {
+  //   return this.getDestinaciones().pipe(
+  //     map((destinaciones: DestinacionesMain) => {
+  //       const destinacion = destinaciones.data.find(dest => dest.id === id);
+  //       if (!destinacion) {
+  //         throw new Error('Destinacion not found');
+  //       }
+  //       return destinacion;
+  //     })
+  //   );
+  // }
 }
