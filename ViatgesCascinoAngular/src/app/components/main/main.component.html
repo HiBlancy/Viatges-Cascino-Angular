@@ -1,94 +1,87 @@
-<main>
-    <!-- Carousel -->
-    <div class="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/HotelDonJuan.jpg" alt="Viaje 1" />
-          <div class="carousel-caption">
-            <p>Hotel Don Juan **** - Lloret de Mar</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/TossaDeMar.jpeg" alt="Viaje 2" />
-          <div class="carousel-caption">
-            <p>Tossa de Mar</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!--cambair fotos-->
-          <img src="./assets/HotelLellaBaya.jpg" alt="Viaje 2" />
-          <div class="carousel-caption">
-            <p>Hotel Lella Baya**** - Hammamet</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/Barcelona.jpg" alt="Viaje 2" />
-          <div class="carousel-caption">
-            <p>Barcelona</p>
-          </div>
+<main class="container-fluid px-0">
+  <!-- Carousel Bootstrap -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/HotelDonJuan.jpg" class="d-block w-100" style="height: 28.125rem; object-fit: cover;" alt="Viaje 1">
+        <div class="carousel-caption d-none d-md-block text-start ps-5">
+          <p class="bg-dark bg-opacity-50 d-inline-block px-3 py-1 rounded">Hotel Don Juan **** - Lloret de Mar</p>
         </div>
       </div>
-      <button class="carousel-control prev">&lt;</button>
-      <button class="carousel-control next">&gt;</button>
-    </div>
-
-
-    <h2 class="promotions-title">{{destinacionesmain.titulo}}</h2>
-
-    <div class="container d-flex justify-content-between flex-wrap">
-    @for (destino of destinacionesmain.destinaciones; track destino){
-      <!--TODO UN ITEM ES UN BOTON, Y REDIRIGE A SU PROPIA PAGINA
-      <!--<a [routerLink]=[] class="text-decoration-none">-->
-      <div class="promotion-item card m-3" style="width: 18rem;">
-        <img src="{{destino.imagen}}" class="card-img-top"  alt="...">
-        <div class="card-body d-flex justify-content-center flex-column align-items-center ">
-          <h3 class="card-title text-center display-6"><strong>{{destino.titulo}}</strong></h3>
-          <p class="card-text">{{destino.dias_noches}}</p>
-          <p class="card-text"><strong>{{destino.precio}}</strong></p>
+      <div class="carousel-item">
+        <img src="./assets/TossaDeMar.jpeg" class="d-block w-100" style="height: 28.125rem; object-fit: cover;" alt="Viaje 2">
+        <div class="carousel-caption d-none d-md-block text-start ps-5">
+          <p class="bg-dark bg-opacity-50 d-inline-block px-3 py-1 rounded">Tossa de Mar</p>
         </div>
       </div>
-      <!-- </a> -->
-    }
-    </div>
-
-
-
-    <div class="welcome-and-promotions">
-    <!--
-      <div class="promotions-carousel">
-        <div class="carousel-wrapper">
-          <a href="pag/promotionCarnaval.html" class="promotion-itemP">
-            <img src="./assets/CarnavalEnVenecia.jpg" alt="Carnaval en Venecia" />
-            <h3>CARNAVAL EN VENECIA</h3>
-            <p>4 días, 3 noches</p>
-            <p><strong>Precio: 430€</strong></p>
-          </a>
-      </div>
-
-    -->
-
-      <!-- Bienvenida -->
-      <div class="welcome-section">
-        <div>
-          <h2>¡Bienvenidos a Viajes Cascino!</h2>
-          <p>
-            Somos especialistas en la organización de viajes en autocar desde
-            el sur de Francia y España. Ofrecemos estancias a precios
-            asequibles, circuitos, cruceros, viajes temáticos como Port
-            Aventura, Disney, así como eventos deportivos y organización de
-            torneos (fútbol, voleibol, etc.). También organizamos seminarios y
-            viajes por toda Europa. Si perteneces a una asociación, un club,
-            un comité de empresa o un grupo de amigos, podemos realizar un
-            estudio personalizado para ti.
-          </p>
-          <p>Estamos a tu disposición para cualquier consulta.</p>
-          <p>¡Hasta pronto!</p>
+      <div class="carousel-item">
+        <img src="./assets/HotelLellaBaya.jpg" class="d-block w-100" style="height: 28.125rem; object-fit: cover;" alt="Viaje 3">
+        <div class="carousel-caption d-none d-md-block text-start ps-5">
+          <p class="bg-dark bg-opacity-50 d-inline-block px-3 py-1 rounded">Hotel Lella Baya**** - Hammamet</p>
         </div>
-        <div class="download-btn">
-          <p>Descarga</p>
-          <h3>Catálogo 2025</h3>
-          <img src="./assets/IconoDescarga.png" alt="" class="iconDownload" />
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Barcelona.jpg" class="d-block w-100" style="height: 28.125rem; object-fit: cover;" alt="Viaje 4">
+        <div class="carousel-caption d-none d-md-block text-start ps-5">
+          <p class="bg-dark bg-opacity-50 d-inline-block px-3 py-1 rounded">Barcelona</p>
         </div>
       </div>
     </div>
-  </main>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Sección de promociones -->
+  <h2 class="text-center my-5 display-4 fw-bold" style="color: var(--main-bg-color);">{{destinacionesmain.titulo}}</h2>
+
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      @for (destino of destinacionesmain.destinaciones; track destino) {
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card h-100 border-0 shadow-sm hover-effect">
+          <img src="{{destino.imagen}}" class="card-img-top" style="height: 200px; object-fit: cover;" alt="{{destino.titulo}}">
+          <div class="card-body text-center">
+            <h3 class="card-title fw-bold fs-4" style="color: var(--main-bg-color);">{{destino.titulo}}</h3>
+            <p class="card-text">{{destino.dias_noches}}</p>
+            <p class="card-text fw-bold">{{destino.precio}}</p>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+
+  <!-- Sección de bienvenida -->
+  <div class="container my-5">
+    <div class="row align-items-center bg-light p-4 rounded-3 shadow-sm">
+      <div class="col-lg-8">
+        <h2 class="fw-bold mb-4">¡Bienvenidos a Viajes Cascino!</h2>
+        <p class="lead">
+          Somos especialistas en la organización de viajes en autocar desde
+          el sur de Francia y España. Ofrecemos estancias a precios
+          asequibles, circuitos, cruceros, viajes temáticos como Port
+          Aventura, Disney, así como eventos deportivos y organización de
+          torneos (fútbol, voleibol, etc.). También organizamos seminarios y
+          viajes por toda Europa. Si perteneces a una asociación, un club,
+          un comité de empresa o un grupo de amigos, podemos realizar un
+          estudio personalizado para ti.
+        </p>
+        <p>Estamos a tu disposición para cualquier consulta.</p>
+        <p class="fw-bold">¡Hasta pronto!</p>
+      </div>
+      <div class="col-lg-4 text-center mt-4 mt-lg-0">
+        <div class="download-btn bg-primary text-white p-4 rounded-3 shadow hover-effect">
+          <p class="mb-1 fs-5">Descarga</p>
+          <h3 class="mb-3 fw-bold">Catálogo 2025</h3>
+          <img src="./assets/IconoDescarga.png" alt="Icono descarga" style="width: 80px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

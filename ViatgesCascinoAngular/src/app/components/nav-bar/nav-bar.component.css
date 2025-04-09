@@ -1,67 +1,47 @@
-/*Navegacion*/
-nav {
-    position: sticky; /*Se queda peagdo si haces scroll*/
-    background-color: var(--main-bg-color);
-    top: 0; /* Se pega en la parte superior */
-    z-index: 1000;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; /*No se aprecia de primeras, pero al ser pantalla peque si*/
-    padding: 0.6rem;
-    margin: 0;
-    list-style: none;
-  }
-  
-  nav ul li {
-    padding: 0.6rem;
-    width: 100%;
-    text-align: center;
-    position: relative;
-  }
-  
-  nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: var(--text-color-light);
-    transition: font-weight 0.2s ease; /*anade transicion al hacer hover*/
-    font-size: 1.2rem;
-  }
-  
-  nav ul li:hover {
-    font-weight: bold;
-  }
-  
-  /*Estilo del contenedor del dropdown*/
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--hover-bg-color);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: 100%;
-    top: 100%;
-    left: 0;
-  }
-  
-  /*dentro del dropdown*/
-  .dropdown-content a {
-    color: var(--text-color-dark);
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    display: block;
-    width: 100%; /*area clicable sea completa */
-    box-sizing: border-box;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: var(--main-bg-color);
-    color: var(--hover-bg-color);
-  }
-  
-  /* Mostrar el contenido del dropdown cuando se hace hover sobre el contenedor */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+/* Estilos base del navbar */
+.navbar {
+  background-color: var(--main-bg-color) ;
+  padding: 0.6rem 0;
+}
+
+.nav-link {
+  color: var(--text-color-light) ;
+  font-size: 1.2rem;
+  padding: 0.6rem 1rem ;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+/* Dropdown al hover */
+.dropdown-hover:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Elimina el espacio entre el ítem y el dropdown */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  border: none;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  /* Animación suave */
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+}
+
+.dropdown-hover:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  color: var(--bg-text-color);
+  padding: 0.75;
+}

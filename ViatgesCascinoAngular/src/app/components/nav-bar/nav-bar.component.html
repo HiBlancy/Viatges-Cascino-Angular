@@ -1,20 +1,36 @@
 <main class="main">
-    <!--Arregalr el dropdown, que salga desde la caja y no del texto-->
-    <nav>
-      <ul>
-        <li><a routerLink ="/home">Inicio</a></li>
-        <li><a routerLink ="/catalogo">Catálogo</a></li>
-        <li class="dropdown">
-          <a routerLink ="/destinations" class="dropbtn">Destinaciones</a>
-          <div class="dropdown-content">
-            <a href="">España</a>
-            <a href="">Italia</a>
-            <a href="">Andorra</a>
-            <a href="">Otros</a>
-          </div>
-        <li><a routerLink ="/la-agencia">La agencia</a></li>
-        <!-- Sobre nosotros / La agencia-->
-        <li><a routerLink ="/contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </main>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #7a3131;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-evenly">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/catalogo">Catálogo</a>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" routerLink="/destinations" id="navbarDropdown">
+              Destinaciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #7a3131;">
+              <li><a class="dropdown-item" href="#">España</a></li>
+              <li><a class="dropdown-item" href="#">Italia</a></li>
+              <li><a class="dropdown-item" href="#">Andorra</a></li>
+              <li><a class="dropdown-item" href="#">Otros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/la-agencia">La agencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</main>

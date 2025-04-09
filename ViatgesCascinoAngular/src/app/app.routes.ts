@@ -5,6 +5,7 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { LaAgenciaComponent } from './components/la-agencia/la-agencia.component';
 import { CarnavalVeneciaComponent } from './components/destinos/carnaval-venecia/carnaval-venecia.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 export const routes: Routes = [
     {path: 'home', component: MainComponent},
@@ -13,6 +14,7 @@ export const routes: Routes = [
     {path: 'la-agencia', component: LaAgenciaComponent},
     {path: 'contacto', component: ContactoComponent},
     {path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '**', component: NotFoundComponent },
 
     //destinos concretos
     {path: 'carnaval-venecia', component: CarnavalVeneciaComponent}
