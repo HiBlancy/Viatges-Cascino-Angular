@@ -23,6 +23,21 @@
 }
 
 .dropdown-menu {
+  background-color: #7a3131;
+  color: #eccaca;
+}
+
+.dropdown-menu a {
+  color: #eccaca;
+}
+
+.dropdown-menu a:hover {
+  background-color: #eccaca;
+  color: #7a3131;
+}
+
+
+.dropdown-menu {
   display: none;
   position: absolute;
   border: none;
