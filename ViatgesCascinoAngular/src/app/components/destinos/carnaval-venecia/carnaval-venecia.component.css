@@ -1,0 +1,118 @@
+/* Titulo de la pagina */
+.destination-title {
+    font-size: 2.5rem;
+    color: var(--main-bg-color);
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+  
+  /* Informacion basica */
+  .info-basica {
+    text-align: left;
+    margin-bottom: 1.875rem;
+  }
+  
+  .info-basica p {
+    font-size: 1.1rem;
+    margin: 0.3125rem 0; /* 5px */
+    color: var(--text-lighter-color);
+  }
+  
+  .info-basica .precio {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--text-color);
+    text-align: right;
+  }
+  
+  /* Itinerario */
+  .itinerario {
+    background-color: var(--bg-text-color);
+    padding: 2rem;
+    border-radius: 0.62rem;
+    box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    max-width: var(--base-max-content-width);
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .dia {
+    margin-bottom: 1.875rem;
+  }
+  
+  .dia .texto {
+    flex: 2;
+  }
+  
+  .dia.con-imagen {
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .dia.con-imagen .texto {
+    flex: 2;
+  }
+  
+  .dia.con-imagen .imagen {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dia.con-imagen .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+    box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .dia h2 {
+    font-size: 1.5rem;
+    color: var(--main-bg-color);
+    margin-bottom: 0.625rem;
+    border-bottom: 0.125rem solid var(--main-bg-color);
+    padding-bottom: 0.3125rem; /* 5px */
+  }
+  
+  .dia p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+  }
+  
+  .info-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem; /* 20px */
+    margin-top: 2.5rem; /* 40px */
+  }
+  
+  .info-box {
+    background-color: var(--bg-text-color);
+    border: 1px solid var(--hover-bg-color);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .info-box h3 {
+    font-size: 1.5rem;
+    color: var(--main-bg-color);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .info-box ul {
+    padding-left: 1.25rem;
+  }
+  
+  .info-box ul li {
+    margin-bottom: 0.625rem;
+    text-align: justify;
+  }

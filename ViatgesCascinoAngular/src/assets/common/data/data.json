@@ -7,25 +7,28 @@
       "dias_noches": "4 días, 3 noches",
       "precio": "Precio: 430€",
       "imagen": "./assets/CarnavalEnVenecia.jpg",
-      "ruta": "./destinos/carnaval-venecia"
+      "ruta": "carnaval-venecia"
     },
     {
       "titulo": "PORTAVENTURA",
       "dias_noches": "4 días, 3 noches",
       "precio": "Precio: 299€",
-      "imagen": "./assets/Portaventura.png"
+      "imagen": "./assets/Portaventura.png",
+      "ruta": "portaventura"
     },
     {
       "titulo": "MERCADO NAVIDEÑO EN COSTA BRAVA",
       "dias_noches": "4 días, 3 noches",
       "precio": "Precio: 249€",
-      "imagen": "./assets/MercadoNavideno.jpg"
+      "imagen": "./assets/MercadoNavideno.jpg",
+      "ruta": "carnaval-venecia"
     },
     {
       "titulo": "PLAYA DE ARO",
       "dias_noches": "6 días, 5 noches",
       "precio": "Precio: 349€",
-      "imagen": "./assets/PlayaDeAro.jpg"
+      "imagen": "./assets/PlayaDeAro.jpg",
+      "ruta": "carnaval-venecia"
     }
   ]
 }

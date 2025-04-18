@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router'; // ⬅️ IMPORTANTE
 import { DestinacionesMain } from '../../common/destinaciones';
 import { DestinacionesMainService } from '../../servicio/destinaciones-main.service';
+import { CommonModule } from '@angular/common'; // Necesario para el uso de directivas comunes
 
 @Component({
   selector: 'app-main',
-  imports: [],
+  imports: [CommonModule, RouterModule], // Asegúrate de que RouterModule esté aquí
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
@@ -33,4 +35,4 @@ export class MainComponent implements OnInit {
         }
       );
     }
-  }
+}

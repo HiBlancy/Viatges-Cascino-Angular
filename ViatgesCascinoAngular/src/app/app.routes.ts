@@ -6,16 +6,23 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { LaAgenciaComponent } from './components/la-agencia/la-agencia.component';
 import { CarnavalVeneciaComponent } from './components/destinos/carnaval-venecia/carnaval-venecia.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { PortaventuraComponent } from './components/destinos/portaventura/portaventura.component';
 
 export const routes: Routes = [
-    {path: 'home', component: MainComponent},
-    {path: 'catalogo', component: CatalogoComponent},
-    {path: 'destinations', component: DestinationsComponent},
-    {path: 'la-agencia', component: LaAgenciaComponent},
-    {path: 'contacto', component: ContactoComponent},
-    {path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: '**', component: NotFoundComponent },
+     // Redirigir al home cuando no se ingrese ninguna ruta
+     { path: '', redirectTo: '/home', pathMatch: 'full' }, // Aquí rediriges a home al cargar la web.
 
-    //destinos concretos
-    {path: 'carnaval-venecia', component: CarnavalVeneciaComponent}
+     { path: 'home', component: MainComponent }, 
+ 
+     { path: 'catalogo', component: CatalogoComponent },
+     { path: 'destinations', component: DestinationsComponent },
+     { path: 'la-agencia', component: LaAgenciaComponent },
+     { path: 'contacto', component: ContactoComponent },
+ 
+     // Destinos específicos
+     { path: 'carnaval-venecia', component: CarnavalVeneciaComponent },
+     { path: 'portaventura', component: PortaventuraComponent },
+ 
+     // Ruta para manejar páginas no encontradas
+     { path: '**', component: NotFoundComponent }
 ];
