@@ -7,6 +7,8 @@ import { LaAgenciaComponent } from './components/la-agencia/la-agencia.component
 import { CarnavalVeneciaComponent } from './components/destinos/carnaval-venecia/carnaval-venecia.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { PortaventuraComponent } from './components/destinos/portaventura/portaventura.component';
+import { MercadoNavidenoComponent } from './components/destinos/mercado-navideno/mercado-navideno.component';
+import { PlayaDeAroComponent } from './components/destinos/playa-de-aro/playa-de-aro.component';
 
 export const routes: Routes = [
      // Redirigir al home cuando no se ingrese ninguna ruta
@@ -22,6 +24,8 @@ export const routes: Routes = [
      // Destinos específicos
      { path: 'carnaval-venecia', component: CarnavalVeneciaComponent },
      { path: 'portaventura', component: PortaventuraComponent },
+     { path: 'mercado_navideno', component: MercadoNavidenoComponent },
+     { path: 'playa-de-aro', component: PlayaDeAroComponent },
  
      // Ruta para manejar páginas no encontradas
      { path: '**', component: NotFoundComponent }

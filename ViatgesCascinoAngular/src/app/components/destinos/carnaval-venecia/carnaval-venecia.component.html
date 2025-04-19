@@ -1,18 +1,27 @@
-      <!-- Título de la pagina -->
-      <h1 class="destination-title">CARNAVAL EN VENECIA</h1>
+<div class="container my-5">
+  <!-- Título de la página -->
+  <h1 style="color: #7a3131;" class="text-center mb-4 display-4 fw-bold">CARNAVAL EN VENECIA</h1>
 
-      <!-- Información basica -->
-      <div class="info-basica">
-        <p><strong>Duración:</strong> 4 días del 21 al 24 de febrero de 2025</p>
-        <p class="precio"><strong>Precio:</strong> 430€</p>
-      </div>
+  <!-- Información básica -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <p class="fs-5 mb-1"><strong>Duración:</strong> 4 días</p>
+      <p class="fs-5 mb-1"><strong>Fechas:</strong> 21 al 24 de febrero de 2025</p>
+    </div>
+    <div class="col-md-6 text-md-end">
+      <p class="fs-3 fw-bold fst-italic text-dark"><strong>Precio:</strong> 430€</p>
+    </div>
+  </div>
 
-      <!-- Itinerario -->
-      <div class="itinerario">
-        <div class="dia con-imagen">
-          <div class="texto">
-            <h3>DÍA 1: TU LOCALIDAD / LIDO DI JESOLO</h3>
-            <p>
+  <div class="container my-4">
+    <!-- Itinerario -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-body p-3">
+        <!-- Día 1 -->
+        <div class="row g-3 mb-3 align-items-start">  <!-- Cambiado a align-items-start -->
+          <div class="col-lg-8 order-lg-1 order-2">  <!-- Reordenamiento para mobile -->
+            <h3 style="color: #7a3131; border-bottom: 2px solid #7a3131" class="h4 pb-2 mb-2">DÍA 1: TU LOCALIDAD / LIDO DI JESOLO</h3>
+            <p class="mb-0 text-justify">
               Salida temprana en autocar gran turismo. Durante el trayecto,
               tiempo libre para almorzar por cuenta propia. Continuaremos
               nuestro viaje hacia Lido di Jesolo, llegando al hotel a última
@@ -20,19 +29,18 @@
               (incluye bebida) y alojamiento.
             </p>
           </div>
-
-          <div class="imagen">
-            <img src="/img/veneciaMapa.png" alt="Día 1 - Lido di Jesolo" />
+          <div class="col-lg-4 order-lg-2 order-1 mb-2 mb-lg-0">  <!-- Margen inferior solo en mobile -->
+            <img src="assets/veneciaMapa.png" alt="Día 1 - Lido di Jesolo" class="img-fluid rounded shadow w-100" />
           </div>
         </div>
-
-        <div class="dia con-imagen">
-          <div class="texto">
-            <h3>
-              DÍA 2: MURANO / BURANO / CARNAVAL DE VENECIA Y LA FIESTA DE LAS
-              MARÍAS
+  
+        <!-- Día 2 -->
+        <div class="row g-3 mb-3 align-items-start">
+          <div class="col-lg-8">
+            <h3 style="color: #7a3131; border-bottom: 2px solid #7a3131" class="h4 pb-2 mb-2">
+              DÍA 2: MURANO / BURANO / CARNAVAL DE VENECIA Y LA FIESTA DE LAS MARÍAS
             </h3>
-            <p>
+            <p class="mb-0 text-justify">
               Después del desayuno, nos embarcaremos con guía en un vaporetto
               privado hacia Murano, conocida por sus legendarios maestros
               vidrieros. A continuación, visitaremos Burano, famosa por sus
@@ -45,14 +53,14 @@
               espera la cena (incluye bebida) y alojamiento.
             </p>
           </div>
-          <div class="imagen">
-            <img src="/img/restauranteABurano.jpg" alt="Día 2 - Restaurante" />
+          <div class="col-lg-4 mb-2 mb-lg-0">
+            <img src="assets/restauranteABurano.jpg" alt="Día 2 - Restaurante" class="img-fluid rounded shadow w-100" />
           </div>
         </div>
-
-        <div class="dia">
-          <h3>DÍA 3: LIDO DI JESOLO / CARNAVAL DE VENECIA</h3>
-          <p>
+        <!-- Día 3 -->
+        <div class="mb-4">
+          <h3 style="color: #7a3131; border-bottom: 2px solid #7a3131" class="h4 pb-2">DÍA 3: LIDO DI JESOLO / CARNAVAL DE VENECIA</h3>
+          <p class="mb-0 text-justify-custom">
             Tras el desayuno, nos dirigiremos a Punta Sabbioni para embarcar en
             un vaporetto privado hacia Venecia. Tendremos la mañana libre para
             explorar la ciudad y disfrutar de sus encantos. El almuerzo será a
@@ -63,36 +71,54 @@
           </p>
         </div>
 
-        <div class="dia">
-          <h3>DÍA 4: LIDO DI JESOLO / TU LOCALIDAD</h3>
-          <p>
+        <!-- Día 4 -->
+        <div class="mb-4">
+          <h3 style="color: #7a3131; border-bottom: 2px solid #7a3131" class="h4 pb-2">DÍA 4: LIDO DI JESOLO / TU LOCALIDAD</h3>
+          <p class="mb-0 text-justify-custom">
             Después del desayuno, salida del hotel para iniciar el viaje de
             regreso. Durante el trayecto, habrá tiempo libre para almorzar por
             cuenta propia. Llegada prevista a tu localidad por la noche.
           </p>
         </div>
       </div>
-      <div class="info-boxes">
-        <div class="info-box">
-          <h3>Incluye:</h3>
-          <ul>
-            <li>Transporte en autocar gran turismo.</li>
-            <li>
+    </div>
+  </div>
+
+  <!-- Info Boxes -->
+  <div class="row g-4 mb-5">
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div style="background-color: #7a3131;"  class="card-header text-white text-center">
+          <h3 class="h5 mb-0">Incluye:</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Transporte en autocar gran turismo.</li>
+            <li class="list-group-item">
               Alojamiento en hotel *** o **** en régimen de media pensión
               (desayuno y cena con bebidas incluidas).
             </li>
-            <li>Almuerzos en restaurante los días 2 y 3.</li>
-            <li>Excursiones y actividades mencionadas en el programa.</li>
-          </ul>
-        </div>
-
-        <div class="info-box">
-          <h3>No incluye:</h3>
-          <ul>
-            <li>Suplemento por habitación individual: +95€.</li>
-            <li>Seguro de asistencia y cancelación: +20€.</li>
-            <li>Almuerzos del día 1 y 4.</li>
-            <li>Tasas de entrada y estancia.</li>
+            <li class="list-group-item">Almuerzos en restaurante los días 2 y 3.</li>
+            <li class="list-group-item">Excursiones y actividades mencionadas en el programa.</li>
           </ul>
         </div>
       </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header bg-secondary text-white text-center">
+          <h3 class="h5 mb-0">No incluye:</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Suplemento por habitación individual: +95€.</li>
+            <li class="list-group-item">Seguro de asistencia y cancelación: +20€.</li>
+            <li class="list-group-item">Almuerzos del día 1 y 4.</li>
+            <li class="list-group-item">Tasas de entrada y estancia.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

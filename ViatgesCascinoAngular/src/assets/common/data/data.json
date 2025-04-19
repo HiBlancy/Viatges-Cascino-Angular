@@ -21,14 +21,14 @@
       "dias_noches": "4 días, 3 noches",
       "precio": "Precio: 249€",
       "imagen": "./assets/MercadoNavideno.jpg",
-      "ruta": "carnaval-venecia"
+      "ruta": "mercado_navideno"
     },
     {
       "titulo": "PLAYA DE ARO",
       "dias_noches": "6 días, 5 noches",
       "precio": "Precio: 349€",
       "imagen": "./assets/PlayaDeAro.jpg",
-      "ruta": "carnaval-venecia"
+      "ruta": "playa-de-aro"
     }
   ]
 }
