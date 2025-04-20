@@ -1,0 +1,35 @@
+.legal-notice {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .legal-notice .card {
+    border: none;
+  }
+  
+  .legal-notice h2, 
+  .legal-notice h3, 
+  .legal-notice h4 {
+    color: #2c3e50;
+    margin-top: 1.5rem;
+  }
+  
+  .legal-notice ul {
+    padding-left: 1.5rem;
+  }
+  
+  .legal-notice a {
+    color: #0077b6;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .legal-notice {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    
+    .legal-notice .card-body {
+      padding: 1rem;
+    }
+  }

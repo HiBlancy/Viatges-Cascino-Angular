@@ -1,0 +1,55 @@
+.cookie-policy {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .cookie-policy .card {
+    border: none;
+  }
+  
+  .cookie-policy .table {
+    font-size: 0.9rem;
+  }
+  
+  .cookie-policy .table th {
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  
+  .cookie-policy .table td {
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 768px) {
+    .cookie-policy .table-responsive {
+      border: 0;
+    }
+    
+    .cookie-policy .table thead {
+      display: none;
+    }
+    
+    .cookie-policy .table tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid #dee2e6;
+    }
+    
+    .cookie-policy .table td {
+      display: block;
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+      border-bottom: 1px solid #dee2e6;
+    }
+    
+    .cookie-policy .table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 1rem;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
