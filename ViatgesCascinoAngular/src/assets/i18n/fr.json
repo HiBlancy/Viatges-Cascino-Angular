@@ -1,8 +1,16 @@
 {
-    "INICIO": "Notre catalogue 2025",
-    "P1-Inicio": "Le catalogue disponible en téléchargement présente nos offres et destinations pour 2025. Toutes les dates, prix et disponibilités indiqués sont valables pour cette année en cours.",
-    "P2-Inicio": "Vous trouverez des informations détaillées sur nos forfaits vacances, les dates de départ, les conditions générales et les services inclus. Pour toute question ou information complémentaire, n'hésitez pas à contacter notre service client.",
-    "P3-Inicio": "Vous recherchez plus d'options ? Explorez notre section destinations où vous trouverez toutes nos options disponibles avec des descriptions complètes de chaque destination.",
-    "Descargar": "Télécharger le catalogue",
-    "Catalogo2025": "Catalogue 2025"
+  "INICIO": "Notre catalogue 2025",
+  "P1-Inicio": "Le catalogue disponible en téléchargement présente nos offres et destinations pour 2025. Toutes les dates, prix et disponibilités indiqués sont valables pour cette année en cours.",
+  "P2-Inicio": "Vous trouverez des informations détaillées sur nos forfaits vacances, les dates de départ, les conditions générales et les services inclus. Pour toute question ou information complémentaire, n'hésitez pas à contacter notre service client.",
+  "P3-Inicio": "Vous recherchez plus d'options ? Explorez notre section destinations où vous trouverez toutes nos options disponibles avec des descriptions complètes de chaque destination.",
+  "Descargar": "Télécharger le catalogue",
+  "Catalogo2025": "Catalogue 2025",
+
+    "Bienvenida-agencia": "Bienvenue chez Cascino Travel !",
+    "P1-agencia": "Chez Viajes Cascino, nous sommes spécialisés dans l'organisation de voyages en autocar depuis le sud de la France et l'Espagne vers les principales destinations touristiques d'Europe. Avec plus de 20 ans d'expérience dans le secteur, nous avons gagné la confiance de milliers de voyageurs grâce à notre engagement envers la qualité, la sécurité et la satisfaction client.",
+    "P2-agencia": "Notre équipe de professionnels se consacre à la conception de séjours abordables, de circuits culturels, de croisières, d'escapades thématiques telles que Port Aventura ou Disneyland Paris, et d'événements sportifs tels que des tournois de football et de volley-ball. Nous sommes également spécialisés dans l'organisation de séminaires, de voyages d'affaires et de voyages sur mesure pour groupes privés ou associations.",
+    "P3-agencia": "Nous disposons d'une flotte d'autocars modernes équipés des dernières technologies pour offrir confort et sécurité tout au long du voyage. De plus, nous travaillons en collaboration avec des hôtels sélectionnés qui garantissent un séjour de qualité à chaque destination.",
+    "P4-agencia": "Si vous faites partie d'une association, d'un club sportif, d'un comité d'entreprise, ou souhaitez simplement organiser un voyage de groupe entre amis, n'hésitez pas à nous contacter. Nous créons des devis personnalisés et adaptons nos programmes à vos besoins.",
+    "P5-agencia": "Chez Viajes Cascino, nous ne vendons pas seulement des voyages",
+    "P6-agencia": "Nous sommes là pour répondre à toutes vos questions et sommes impatients de vous aider lors de votre prochaine aventure !"
 }

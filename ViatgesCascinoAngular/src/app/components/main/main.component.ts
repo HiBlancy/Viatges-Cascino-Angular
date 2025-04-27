@@ -4,6 +4,7 @@ import { DestinacionesMain } from '../../common/destinaciones';
 import { DestinacionesMainService } from '../../servicio/destinaciones-main.service';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslationHelperService } from '../../servicio/translation-helper.service';
 
 @Component({
   selector: 'app-main',
@@ -23,7 +24,8 @@ export class MainComponent implements OnInit {
 
     constructor(
       private destinacionesService: DestinacionesMainService,
-      private translate: TranslateService
+      private translate: TranslateService,
+      public translationHelper: TranslationHelperService
     ) { }
 
     ngOnInit(): void {
