@@ -3,42 +3,51 @@ import { RouterModule } from '@angular/router';
 import { DestinacionesMain } from '../../common/destinaciones';
 import { DestinacionesMainService } from '../../servicio/destinaciones-main.service';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core'; 
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main',
-  standalone: true, 
+  standalone: true,
   imports: [
     CommonModule, 
     RouterModule,
     TranslateModule
   ],
   templateUrl: './main.component.html',
-  styleUrl: './main.component.css'
+  styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-    destinacionesmain!: DestinacionesMain;
+    destinacionesmain: DestinacionesMain = { titulo: '', destinaciones: [] }; // Inicializa con valores por defecto
+    isLoading = true;
+    currentLanguage = 'es';
 
-    constructor(private destinacionesService: DestinacionesMainService) { }
+    constructor(
+      private destinacionesService: DestinacionesMainService,
+      private translate: TranslateService
+    ) { }
 
     ngOnInit(): void {
+      this.translate.setDefaultLang('es');
+      this.translate.use('es');
       this.loadDestinaciones();
     }
 
     loadDestinaciones() {
-      this.destinacionesService.getDestinaciones().subscribe(
-        {
-          next: (data) => {
-            console.log(data)
-            this.destinacionesmain = data;
-          },
-          error: (error) => {
-            console.error('Error loading destinations:', error);
-          },
-          complete: () => {
-            console.log('Destinations loaded successfully');
-          }
+      this.isLoading = true;
+      this.destinacionesService.getDestinaciones().subscribe({
+        next: (data) => {
+          this.destinacionesmain = data;
+          this.isLoading = false;
+        },
+        error: (error) => {
+          console.error('Error loading destinations:', error);
+          this.isLoading = false;
         }
-      );
+      });
+    }
+
+    changeLanguage(lang: string) {
+      this.translate.use(lang);
+      this.currentLanguage = lang;
     }
 }
