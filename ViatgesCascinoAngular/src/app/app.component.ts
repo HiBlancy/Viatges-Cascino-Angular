@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -8,10 +9,12 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { LaAgenciaComponent } from './components/la-agencia/la-agencia.component';
 import { CarnavalVeneciaComponent } from './components/destinos/carnaval-venecia/carnaval-venecia.component';
-
+import { TranslateModule } from '@ngx-translate/core'; 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, 
+  standalone: true,
+  imports: [
+    RouterOutlet, 
     MainComponent, 
     CatalogoComponent, 
     NavBarComponent, 
@@ -19,11 +22,17 @@ import { CarnavalVeneciaComponent } from './components/destinos/carnaval-venecia
     FooterComponent, 
     MenuComponent, 
     ContactoComponent,
-    //destinos concretos
-    CarnavalVeneciaComponent],
+    CarnavalVeneciaComponent,
+    TranslateModule // Añade esto para usar el pipe 'translate' en el template
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'ViatgesCascinoAngular';
+  private translate = inject(TranslateService); // Inyecta el servicio de traducción
+
+  constructor() {
+    this.translate.setDefaultLang('es'); // Establece el idioma por defecto
+    this.translate.use('es'); // Usa el idioma español inicialmente
+  }
 }
