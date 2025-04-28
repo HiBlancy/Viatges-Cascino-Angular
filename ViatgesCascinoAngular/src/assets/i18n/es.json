@@ -12,5 +12,29 @@
     "P3-agencia": " Disponemos de una flota moderna de autocares equipados con la última tecnología para ofrecer comodidad y seguridad durante todo el trayecto. Además, trabajamos en colaboración con hoteles seleccionados que garantizan una estancia de calidad en cada destino.",
     "P4-agencia": "Si formas parte de una asociación, club deportivo, comité de empresa o simplemente deseas organizar un viaje en grupo entre amigos, no dudes en contactarnos. Realizamos presupuestos a medida y adaptamos nuestros programas a tus necesidades.",
     "P5-agencia": "En Viajes Cascino no solo vendemos viajes",
-    "P6-agencia": "¡Estamos a tu disposición para cualquier consulta y deseamos acompañarte en tu próxima aventura!"
+    "P6-agencia": "¡Estamos a tu disposición para cualquier consulta y deseamos acompañarte en tu próxima aventura!",
+
+
+    "DestinoCarnaval": "Carnaval de Venecia",
+    "Duracion": "Duración: 4 días",
+    "Precio": "Precio: 499€",
+    "Fechas": "21 al 24 de febrero de 2025",
+    "TituloDia1": "DÍA 1: TU LOCALIDAD / LIDO DI JESOLO",
+    "TextoDia1": "Salida temprana en autocar gran turismo. Durante el trayecto, tiempo libre para almorzar por cuenta propia. Continuaremos nuestro viaje hacia Lido di Jesolo, llegando al hotel a última hora de la tarde. Una vez instalados, disfrutaremos de la cena (incluye bebida) y alojamiento.",
+    "TituloDia2": "DÍA 2: MURANO / BURANO / CARNAVAL DE VENECIA Y LA FIESTA DE LAS MARÍAS",
+    "TextoDia2": "Después del desayuno, nos embarcaremos con guía en un vaporetto privado hacia Murano, conocida por sus legendarios maestros vidrieros. A continuación, visitaremos Burano, famosa por sus encajes y sus pintorescas casas de colores. Almorzaremos en el restaurante «Le Raspo de UA», especializado en pescado, con bebidas incluidas. Posteriormente, disfrutaremos de tiempo libre en Venecia para vivir la FIESTA DE LAS MARÍAS, que da inicio oficial al Carnaval de Venecia. Por la tarde, regresaremos en vaporetto a Punta Sabbioni y, finalmente, al hotel, donde nos espera la cena (incluye bebida) y alojamiento.",
+    "TituloDia3": "DÍA 3: LIDO DI JESOLO / CARNAVAL DE VENECIA",
+    "TextoDia3": "Tras el desayuno, nos dirigiremos a Punta Sabbioni para embarcar en un vaporetto privado hacia Venecia. Tendremos la mañana libre para explorar la ciudad y disfrutar de sus encantos. El almuerzo será a bordo del barco, con bebidas incluidas. Durante la tarde, continuaremos disfrutando del animado ambiente del Carnaval de Venecia. Al final del día, regresaremos al hotel, donde nos espera la cena (incluye bebida) y alojamiento.",
+    "TituloDia4": "DÍA 4: LIDO DI JESOLO / TU LOCALIDAD",
+    "TextoDia4": "Después del desayuno, salida del hotel para iniciar el viaje de regreso. Durante el trayecto, habrá tiempo libre para almorzar por cuenta propia. Llegada prevista a tu localidad por la noche.",
+    "Incluye": "Incluye:",
+    "Incluye1": "Transporte en autocar gran turismo.",
+    "Incluye2": "Alojamiento en hotel *** o **** en régimen de media pensión (desayuno y cena con bebidas incluidas).",
+    "Incluye3": "Almuerzos en restaurante los días 2 y 3.",
+    "Incluye4": "Excursiones y actividades mencionadas en el programa.",
+    "NoIncluye": "No incluye:",
+    "NoIncluye1": "Suplemento por habitación individual: +95€.",
+    "NoIncluye2": "Seguro de asistencia y cancelación: +20€.",
+    "NoIncluye3": "Almuerzos del día 1 y 4.",
+    "NoIncluye4": "Tasas de entrada y estancia."
 }

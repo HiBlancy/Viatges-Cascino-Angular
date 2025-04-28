@@ -9,47 +9,43 @@ import { TranslationHelperService } from '../../servicio/translation-helper.serv
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [
-    CommonModule, 
-    RouterModule,
-    TranslateModule
-  ],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-    destinacionesmain: DestinacionesMain = { titulo: '', destinaciones: [] }; // Inicializa con valores por defecto
-    isLoading = true;
-    currentLanguage = 'es';
+  destinacionesmain: DestinacionesMain = { titulo: '', destinaciones: [] }; // Inicializa con valores por defecto
+  isLoading = true;
+  currentLanguage = 'es';
 
-    constructor(
-      private destinacionesService: DestinacionesMainService,
-      private translate: TranslateService,
-      public translationHelper: TranslationHelperService
-    ) { }
+  constructor(
+    private destinacionesService: DestinacionesMainService,
+    private translate: TranslateService,
+    public translationHelper: TranslationHelperService
+  ) {}
 
-    ngOnInit(): void {
-      this.translate.setDefaultLang('es');
-      this.translate.use('es');
-      this.loadDestinaciones();
-    }
+  ngOnInit(): void {
+    this.translate.setDefaultLang('es');
+    this.translate.use('es');
+    this.loadDestinaciones();
+  }
 
-    loadDestinaciones() {
-      this.isLoading = true;
-      this.destinacionesService.getDestinaciones().subscribe({
-        next: (data) => {
-          this.destinacionesmain = data;
-          this.isLoading = false;
-        },
-        error: (error) => {
-          console.error('Error loading destinations:', error);
-          this.isLoading = false;
-        }
-      });
-    }
+  loadDestinaciones() {
+    this.isLoading = true;
+    this.destinacionesService.getDestinaciones().subscribe({
+      next: (data) => {
+        this.destinacionesmain = data;
+        this.isLoading = false;
+      },
+      error: (error) => {
+        console.error('Error loading destinations:', error);
+        this.isLoading = false;
+      },
+    });
+  }
 
-    changeLanguage(lang: string) {
-      this.translate.use(lang);
-      this.currentLanguage = lang;
-    }
+  changeLanguage(lang: string) {
+    this.translate.use(lang);
+    this.currentLanguage = lang;
+  }
 }

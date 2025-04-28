@@ -36,13 +36,13 @@ export class DestinationsComponent implements OnInit {
       error: (error) => {
         console.error('Error loading destinations:', error);
         this.isLoading = false;
-      }
+      },
     });
   }
-  
+
   groupDestinationsByCountry() {
     this.groupedDestinations = {};
-  
+
     this.destinacionesdestinos.destinaciones.forEach((destino) => {
       const country = destino.pais || 'Otros';
       if (!this.groupedDestinations[country]) {
