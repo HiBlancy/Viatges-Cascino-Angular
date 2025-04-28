@@ -1,0 +1,93 @@
+{
+  "titulo": "DESTINOS",
+  "destinaciones": [
+    {
+      "titulo": "CARNAVAL EN VENECIA",
+      "dias_noches": "4 días, 3 noches",
+      "precio": "Precio: 430€",
+      "imagen": "./assets/CarnavalEnVenecia.jpg",
+      "ruta": "carnaval-venecia",
+      "pais": "España"
+    },
+    {
+        "titulo": "MERCADO NAVIDEÑO EN COSTA BRAVA",
+        "dias_noches": "4 días, 3 noches",
+        "precio": "Precio: 249€",
+        "imagen": "./assets/MercadoNavideno.jpg",
+        "ruta": "mercado_navideno",
+      "pais": "España"
+      },
+    {
+      "titulo": "PENISCOLA",
+      "dias_noches": "6 días, 5 noches",
+      "precio": "Precio: 395€",
+      "imagen": "./assets/Peniscola.jpg",
+      "ruta": "pensicola",
+      "pais": "España"
+    },   
+    {
+      "titulo": "PLAYA DE ARO",
+      "dias_noches": "6 días, 5 noches",
+      "precio": "Precio: 349€",
+      "imagen": "./assets/PlayaDeAro.jpg",
+      "ruta": "playa-de-aro",
+      "pais": "España"
+    },
+    {
+        "titulo": "PORTAVENTURA",
+        "dias_noches": "4 días, 3 noches",
+        "precio": "Precio: 299€",
+        "imagen": "./assets/Portaventura.png",
+        "ruta": "portaventura",
+      "pais": "España"
+      },
+    {
+      "titulo": "LAS 5 MARAVILLAS DE ITALIA",
+      "dias_noches": "4 días",
+      "precio": "Precio: 499€",
+      "imagen": "./assets/5MaravillasItalia.jpg",
+      "ruta": "5MaravillasItalia",
+      "pais": "Italia"
+    },
+    {
+      "titulo": "LOS LAGOS ITALIANOS",
+      "dias_noches": "4 días",
+      "precio": "Precio: 545€",
+      "imagen": "./assets/LagosItalianos.jpg",
+      "ruta": "LagosItalianos",
+      "pais": "Italia"
+    },
+    {
+      "titulo": "ROMA LA CIUDAD ETERNA",
+      "dias_noches": "5 días",
+      "precio": "Precio: 725€",
+      "imagen": "./assets/RomaCiudadEterna.jpg",
+      "ruta": "RomaCiudadEterna",
+      "pais": "Italia"
+    },
+    {
+      "titulo": "TÚNEZ JAZMÍN HAMMAMET",
+      "dias_noches": "8 días, 7 noches",
+      "precio": "Precio: 565€",
+      "imagen": "./assets/LellaBayaTunez.jpg",
+      "ruta": "LellaBayaTunez",
+      "pais": "Otros destinos"
+    },
+    {
+      "titulo": "HOTEL ANDORRA PANORAMA****",
+      "dias_noches": "5 días",
+      "precio": "Precio: 429",
+      "imagen": "./assets/PanoramaHotalAndorra.jpg",
+      "ruta": "PanoramaHotalAndorra",
+      "pais": "Otros destinos"
+    },
+    {
+      "titulo": "TÚNEZ DJERBA",
+      "dias_noches": "8 días, 7 noches",
+      "precio": "Precio: 650€",
+      "imagen": "./assets/DjerbaTunez.jpg",
+      "ruta": "DjerbaTunez",
+      "pais": "Otros destinos"
+    }
+  ]
+}

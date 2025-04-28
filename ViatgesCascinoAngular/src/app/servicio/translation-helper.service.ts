@@ -16,14 +16,9 @@ export class TranslationHelperService {
     const translationKey = `DESTINOS.${destinoKey}.${field}`;
     const translation = this.translate.instant(translationKey);
     
-    // Si no encuentra traducción, devuelve cadena vacía (el componente manejará el fallback)
     return translation !== translationKey ? translation : '';
   }
 
-  /**
-   * Convierte la ruta del destino a una clave de traducción
-   * Ejemplo: 'carnaval-venecia' → 'CARNAVAL_VENECIA'
-   */
   normalizeDestinoKey(ruta: string): string {
     return ruta.toUpperCase()
                .replace(/-/g, '_')

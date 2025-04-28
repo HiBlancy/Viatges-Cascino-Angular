@@ -1,18 +1,32 @@
 <!-- contact.component.html -->
 <main class="container my-5">
-  <div class="text-center mb-5">
-    <h2 class="display-4"><strong>CONTACTO</strong></h2>
-  </div>
+  <h2
+    class="text-center my-5 display-4 fw-bold"
+    style="color: var(--main-bg-color)"
+  >
+    CONTACTO
+  </h2>
 
   <div class="row">
     <!-- Información de contacto -->
     <div class="col-lg-6 mb-4">
       <div class="card h-100 shadow-sm">
         <div class="card-body">
-          <p class="card-text">Puedes ponerte en contacto con nosotros rellenando este formulario o llamando a cualquiera de los siguientes números de teléfono.</p>
-          <p class="card-text">Si tienes alguna pregunta sobre nuestra agencia, un viaje en particular, un trayecto específico, o deseas organizar algo totalmente personalizado, no dudes en escribirnos o llamarnos. Estamos aquí para ayudarte y nos esforzaremos por ofrecerte la mejor experiencia posible.</p>
-          
-          <h5 class="card-title mt-4"><strong>Teléfonos de contacto</strong></h5>
+          <p class="card-text">
+            Puedes ponerte en contacto con nosotros rellenando este formulario o
+            llamando a cualquiera de los siguientes números de teléfono.
+          </p>
+          <p class="card-text">
+            Si tienes alguna pregunta sobre nuestra agencia, un viaje en
+            particular, un trayecto específico, o deseas organizar algo
+            totalmente personalizado, no dudes en escribirnos o llamarnos.
+            Estamos aquí para ayudarte y nos esforzaremos por ofrecerte la mejor
+            experiencia posible.
+          </p>
+
+          <h5 class="card-title mt-4">
+            <strong>Teléfonos de contacto</strong>
+          </h5>
           <ul class="list-unstyled">
             <li class="mb-2">0033 662 80 89 08</li>
             <li class="mb-2">0034 912 34 56 78</li>
@@ -29,45 +43,105 @@
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
               <label for="name" class="form-label">Nombre:</label>
-              <input type="text" class="form-control" id="name" formControlName="name">
-              <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" 
-                   class="text-danger">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                formControlName="name"
+              />
+              <div
+                *ngIf="
+                  contactForm.get('name')?.invalid &&
+                  contactForm.get('name')?.touched
+                "
+                class="text-danger"
+              >
                 Por favor ingresa tu nombre
               </div>
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" formControlName="email"
-                     [ngClass]="{'is-invalid': contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)}">
-              <div *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)"
-                   class="invalid-feedback">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                formControlName="email"
+                [ngClass]="{
+                  'is-invalid':
+                    contactForm.get('email')?.invalid &&
+                    (contactForm.get('email')?.dirty ||
+                      contactForm.get('email')?.touched)
+                }"
+              />
+              <div
+                *ngIf="
+                  contactForm.get('email')?.invalid &&
+                  (contactForm.get('email')?.dirty ||
+                    contactForm.get('email')?.touched)
+                "
+                class="invalid-feedback"
+              >
                 Por favor ingresa un email válido
               </div>
             </div>
 
             <div class="mb-3">
               <label for="message" class="form-label">Mensaje:</label>
-              <textarea class="form-control" id="message" rows="4" formControlName="message"
-                        [ngClass]="{'is-invalid': contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)}"></textarea>
-              <div *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)"
-                   class="invalid-feedback">
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                formControlName="message"
+                [ngClass]="{
+                  'is-invalid':
+                    contactForm.get('message')?.invalid &&
+                    (contactForm.get('message')?.dirty ||
+                      contactForm.get('message')?.touched)
+                }"
+              ></textarea>
+              <div
+                *ngIf="
+                  contactForm.get('message')?.invalid &&
+                  (contactForm.get('message')?.dirty ||
+                    contactForm.get('message')?.touched)
+                "
+                class="invalid-feedback"
+              >
                 Por favor ingresa tu mensaje
               </div>
             </div>
 
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="acceptPolicies" formControlName="acceptPolicies">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="acceptPolicies"
+                formControlName="acceptPolicies"
+              />
               <label class="form-check-label" for="acceptPolicies">
-                Acepto las <a routerLink="/politica-privacidad" class="text-primary">políticas de privacidad</a>.
+                Acepto las
+                <a routerLink="/politica-privacidad" class="text-primary"
+                  >políticas de privacidad</a
+                >.
               </label>
-              <div *ngIf="contactForm.get('acceptPolicies')?.invalid && contactForm.get('acceptPolicies')?.touched"
-                   class="text-danger small">
+              <div
+                *ngIf="
+                  contactForm.get('acceptPolicies')?.invalid &&
+                  contactForm.get('acceptPolicies')?.touched
+                "
+                class="text-danger small"
+              >
                 Debes aceptar las políticas de privacidad
               </div>
             </div>
 
-            <button type="submit" class="btn w-100 py-2 text-white" style="background-color: #7a3131; border: none;" [disabled]="contactForm.invalid">
+            <button
+              type="submit"
+              class="btn w-100 py-2 text-white"
+              style="background-color: #7a3131; border: none"
+              [disabled]="contactForm.invalid"
+            >
               Enviar
             </button>
           </form>

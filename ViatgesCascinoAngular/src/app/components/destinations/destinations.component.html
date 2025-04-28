@@ -1,1 +1,44 @@
-<p>Anadir todos los destinos en forma de tarjeta </p>
+<div class="container mb-5"> <!-- AÑADIMOS mb-5 aquí -->
+    @for (pais of (groupedDestinations | keyvalue); track pais) {
+      
+      <!-- Línea separadora -->
+      <div class="d-flex align-items-center my-5">
+        <hr class="flex-grow-1" style="border-top: 3px solid var(--main-bg-color);" />
+        <h2 class="mx-3 fw-bold text-uppercase" style="color: var(--main-bg-color);">
+          {{ pais.key }}
+        </h2>
+        <hr class="flex-grow-1" style="border-top: 3px solid var(--main-bg-color);" />
+      </div>
+  
+      <div class="row justify-content-center g-4">
+        @for (destino of pais.value; track destino) {
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a [routerLink]="['/', destino.ruta]" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm hover-effect">
+                <img
+                  src="{{ destino.imagen }}"
+                  class="card-img-top"
+                  style="height: 200px; object-fit: cover"
+                  alt="{{ destino.titulo }}"
+                />
+                <div class="card-body text-center">
+                  <h3 class="card-title fw-bold fs-4" style="color: var(--main-bg-color)">
+                    {{ destino.titulo }}
+                  </h3>
+                  <p class="card-text">{{ destino.dias_noches }}</p>
+                  <p class="card-text fw-bold">{{ destino.precio }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        }
+      </div>
+  
+    }
+  </div>
+  
+  <!-- ESPACIO EXTRA DE SEGURIDAD -->
+  <div style="height: 80px;"></div>
+  
+  <router-outlet />
+  
